@@ -1,7 +1,21 @@
-# Weather Forecast
+# OpenWeather
 ![Weather](https://github.com/woodRock/expert-chainsaw/workflows/Weather/badge.svg)
 
-This GitHub Action used the [Open Weather API](https://openweathermap.org/api) to display the weather forecast for a given area. It is updated once every 30 minutes. The weather forecast is displayed within predefined tags (hidden inside HTML comments), such that it does not overwrite any other existing content in a README. This action may be novel for projects that are related too or rely on weather forecasting. Consider adding it to your workflow to work up a storm.
+This GitHub Action used the [Open Weather API](https://openweathermap.org/api) to display the weather forecast for a given area. 
+It is updated on PUSH. 
+The weather forecast is displayed within predefined tags (hidden inside HTML comments), such that it does not overwrite any other existing content in a README. 
+
+-----------------------------
+## STEPS:
+
+## 1: Add and modify file
+test.txt
+
+## 2: Workflow starts in Actions
+
+## 3: README is modified with current weather
+
+------------------------------
 
 ## Forecast
 
@@ -24,17 +38,18 @@ This GitHub Action used the [Open Weather API](https://openweathermap.org/api) t
         <img height="45" width="45" style="border: medium none; width: 45px; height: 45px; background: url(&quot;http://openweathermap.org/img/w/10d.png&quot;) repeat scroll 0% 0% transparent;" alt="title" src="http://openweathermap.org/images/transparent.png"/>
       </div>
       <div style="float: left;">
-        <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">27.89°C</div>
+        <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Time">DateTimeC</div>
+        <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">28.2°C</div>
         <div style="display: block; width: 85px; overflow: visible;"></div>
       </div>
     </div>
     <div style="display: block; clear: left; font-size: small;">Clouds: 75%</div>
-    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 75%</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 78%</div>
     <div style="display: block; clear: left; color: gray; font-size: x-small;" >Wind: 2.06 m/s</div>
     <div style="display: block; clear: left; color: gray; font-size: x-small;" >Pressure: 1007hpa</div>
   </div>
   <div style="display: block; clear: left; color: gray; font-size: x-small;">
-    <a href="http://openweathermap.org/city/1880252?utm_source=openweathermap&utm_medium=widget&utm_campaign=html_old" target="_blank">More..</a>
+    <a href="http://openweathermap.org/city/1880252?utm_source=openweathermap&utm_medium=widget&utm_campaign=html_old" target="_blank">More on OpenWeather..</a>
   </div>
   
 </body>
