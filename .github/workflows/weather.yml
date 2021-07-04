@@ -19,7 +19,7 @@ jobs:
           CITY: "singapore"
          
       - name: Greeting
-        id: hello
+        id: Have a nice day
         uses: actions/hello-world-docker-action@v1
         with:
           who-to-greet: 'Janice Tay'
