@@ -1,9 +1,8 @@
 name: "Weather"
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "*/30 * * * *" # Runs every 30 minutes
+  [push]
+  
 
 jobs:
   update_blogs:
@@ -17,7 +16,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           OPEN_WEATHER_TOKEN: 5e04154da653da90a3325c16aa04c462
-          CITY: "Wellington, New Zealand"
+          CITY: "singapore"
       - name: "🛠️ Push changes to GitHub"
         run:
             git config --global user.email readme-bot@example.com && git config --global user.name readme-bot;
