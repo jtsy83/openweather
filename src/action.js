@@ -8,9 +8,10 @@ const TAG_OPEN = `<!-- FEED-START -->`;
 const TAG_CLOSE = `<!-- FEED-END -->`;
 
 async function fetchWeather() {
-  const API_KEY = core.getInput("OPEN_WEATHER_TOKEN");
-  const city = core.getInput("CITY");
-  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&mode=html`;
+  const API_KEY = '5e04154da653da90a3325c16aa04c462'
+  const lat = '1.290270'
+  const lon = '103.851959'
+  const URL = `api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`;
   return fetch(URL)
     .then((response) => response.text())
     .then((html) => html);
