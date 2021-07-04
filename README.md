@@ -6,12 +6,17 @@ This GitHub Action used the [Open Weather API](https://openweathermap.org/api) t
 -----------------------------
 ## STEPS:
 
-* 1: Add and modify file
-test.txt
+* 1: Go to .github/workflows/weather.yml
+Input name in 
+'who-to-greet: 'name''
 
-* 2: Workflow starts in Actions
+* 2: Commit change
 
-* 3: README is modified with current weather
+* 3: Workflow starts in Actions
+
+* 4: README - modified with current weather
+
+* 5: Workflow outputs - Personalised greeting with timestamp
 
 ------------------------------
 
