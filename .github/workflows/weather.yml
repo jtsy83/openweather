@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: "📥 Fetching Repository Contents"
         uses: actions/checkout@main
+        
       - name: "🌨️ Fetching Weather Forecast"
         uses: ./
         with:
@@ -18,11 +19,13 @@ jobs:
           OPEN_WEATHER_TOKEN: ${{secrets.OPEN_WEATHER_TOKEN}}
           CITY: "singapore"
          
+      # hello step
       - name: Greeting
         id: hello
         uses: actions/hello-world-docker-action@v1
         with:
           who-to-greet: 'Janice Tay'
+          
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
