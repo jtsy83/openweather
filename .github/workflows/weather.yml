@@ -15,7 +15,7 @@ jobs:
         uses: ./
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          OPEN_WEATHER_TOKEN: 5e04154da653da90a3325c16aa04c462
+          OPEN_WEATHER_TOKEN: ${{secrets.OPEN_WEATHER_TOKEN}}
           CITY: "singapore"
          
       - name: Greeting
