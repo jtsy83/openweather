@@ -15,8 +15,9 @@ The weather forecast is displayed within predefined tags (hidden inside HTML com
 
 ## 2: Go to .github/workflows/weather.yml
 
-Input name in 
-`'who-to-greet: 'name''
+Input name in:
+
+`who-to=greet: name`
 
 ## 3: Commit change
 
