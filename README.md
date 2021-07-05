@@ -4,6 +4,8 @@
 This GitHub Action used the [Open Weather API](https://openweathermap.org/api) to display the weather forecast for a given area. 
 The weather forecast is displayed within predefined tags (hidden inside HTML comments), such that it does not overwrite any other existing content in a README. 
 
+![image](https://user-images.githubusercontent.com/82754634/124409721-6b8c3a00-dd7b-11eb-9748-586c09407218.png)
+
 -----------------------------
 # Steps:
 
